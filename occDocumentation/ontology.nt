@@ -1,0 +1,1258 @@
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://purl.org/dc/terms/hasVersion> "1.0"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-sa/2.0/" .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor> "\u00C1rea Hackers C\u00EDvics"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontolog\u00EDa que modela elementos de un pleno municipal"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#> <http://www.w3.org/2000/01/rdf-schema#label> "Plenos del Ayuntamiento de Valencia"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology#isPartOf
+<http://dbpedia.org/ontology#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology#isPartOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> .
+<http://dbpedia.org/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://dbpedia.org/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://dbpedia.org/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "propiedad para relacionar el todo con sus partes"@es .
+<http://dbpedia.org/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "es parte de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona los expedientes con los documentos contenidos en este"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva> <http://www.w3.org/2000/01/rdf-schema#label> "Archiva"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dbpedia.org/ontology#isPartOf> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona los documentos con su respectivo expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn> <http://www.w3.org/2000/01/rdf-schema#label> "Archivado En"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una comisi\u00F3n con sus representantes y periodos"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde> <http://www.w3.org/2000/01/rdf-schema#label> "Es comisi\u00F3n-representante de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una sesi\u00F3n del pleno con el tipo de car\u00E1cter, pudiendo ser este ordinario, extraordinario o extraordinario urgente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es car\u00E1cter de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un debate con un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es debate de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n que permite indicar que puntos del orden del d\u00EDa tienen un estado espec\u00EDfico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es estado de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un concejal con la comisi\u00F3n a la que pertenece en un periodo de tiempo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es miembro de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un punto del orden del d\u00EDa con la sesi\u00F3n en la que fue tratado"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es parte de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn> <http://www.w3.org/2000/01/rdf-schema#comment> "Permite indicar un representante ciudadano que participa en el Debate de un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn> <http://www.w3.org/2000/01/rdf-schema#label> "Es Participante En"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un grupo pol\u00EDtico con su respectivo portavoz"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es portavoz de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un procedimiento con los expedientes que tienen un tipo determinado de procedimiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es Procedimiento De"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un concejal con el grupo pol\u00EDtico del cual es portavoz"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es representante de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona los tipos de comisi\u00F3n con aquellas comisiones que pertenecen a cada tipo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es tipo comisi\u00F3n de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que documentos son de un determinado tipo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es Tipo De Documento De"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que expedientes son de un determinado tipo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es tipo de expediente de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que puntos del orden del d\u00EDa son de un determinado tipo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es tipo punto de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una votaci\u00F3n con el punto del orden del d\u00EDa correspondiente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es votaci\u00F3n de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn> <http://www.w3.org/2000/01/rdf-schema#comment> "Permite indicar un representante ciudadano que participa en la Votaci\u00F3n de un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn> <http://www.w3.org/2000/01/rdf-schema#label> "Es votante en"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un voto con la clase definida por la relaci\u00F3n ternaria entre voto, representante y punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es voto de"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n que indica los ciudadanos que pertenecen a una determinada asociaci\u00F3n y que ser\u00E1n quienes puedan participar en un pleno municipal"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion> <http://www.w3.org/2000/01/rdf-schema#label> "Est\u00E1 En Asociaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona las comisiones con los puntos del orden del d\u00EDa que le corresponden a esta"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia> <http://www.w3.org/2000/01/rdf-schema#label> "Estudia"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlaza la persona que ha firmado un documento, con tal documento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma> <http://www.w3.org/2000/01/rdf-schema#label> "Firma"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona los documentos de un expediente con el/los responsable(s) de realizar y firmar ese documento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "Firmado por"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "una entidad esta formada por una segunda entidad, entre otros"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "tiene parte"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asociaci\u00F3n con sus respectivos miembros"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion> <http://www.w3.org/2000/01/rdf-schema#label> "MiembroDeAsociaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn> <http://www.w3.org/2000/01/rdf-schema#comment> "Permite definir que ciudadanos participan en un determinado orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn> <http://www.w3.org/2000/01/rdf-schema#label> "Participa En"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un ciudadano con un punto del orden del d\u00EDa en el que ha participado"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante> <http://www.w3.org/2000/01/rdf-schema#label> "Participante"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relaci\u00F3n entre un expendiente y el punto del orden del dia al que est\u00E1 relacionado"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta> <http://www.w3.org/2000/01/rdf-schema#label> "Soporta"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un punto del orden del d\u00EDa con el expediente que contiene informaci\u00F3n que lo soporta"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "Soportado por"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una sesi\u00F3n del pleno con su car\u00E1cter (ordinaria, extraordinaria, extraordinaria urgente)"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Car\u00E1cter"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que permite definir la relaci\u00F3n ternaria entre comisiones, sus miembros y sus periodos"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante> <http://www.w3.org/2000/01/rdf-schema#label> "Comisi\u00F3n-representante"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n entre un punto del orden del d\u00EDa y su respectivo debate"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Debate"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n entre un punto del orden del d\u00EDa y su respectivo estado"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Estado"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n que indica cuando un representante es miembro de una comisi\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Miembro"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n que indica que representantes ciudadanos participan en un debate"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Participante"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que permite definir la relaci\u00F3n ternaria entre un grupo pol\u00EDtico, el concejal que lo representa en calidad de portavoz y el periodo de representaci\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Portavoz"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una sesi\u00F3n con los puntos del orden del d\u00EDa tratados en ella"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Punto de Orden del D\u00EDa"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el representante (concejal) de un grupo pol\u00EDtico que a su vez es el portavoz"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante> <http://www.w3.org/2000/01/rdf-schema#label> "Representante"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo al que pertenece una comisi\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene tipo comisi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo de un documento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de documento"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo de un expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Expediente"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Especifica el tipo de procedimiento con el que ha sido creado un expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo procedimiento"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo de un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Punto"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un punto del orden del d\u00EDa con la votaci\u00F3n que este tuvo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion> <http://www.w3.org/2000/01/rdf-schema#label> "Votaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n que indica que representantes ciudadanos participan en una votaci\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene votante"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica si el punto del d\u00EDa fue votado a favor, en contra o con abstenci\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto> <http://www.w3.org/2000/01/rdf-schema#label> "Voto"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un punto del orden del d\u00EDa con la comisi\u00F3n a cargo de este"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "Tratado Por"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/alternative
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "T\u00EDtulo alternativo asignado a un documento"@es .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#label> "Alternativo"@es .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/created> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#created-003> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of creation of the resource."@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "Date Created"@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de creaci\u00F3n"@es .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la fecha en la que ocurri\u00F3 un evento"@es .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha"@es .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/title> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#titleT-002> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto> <http://www.w3.org/2000/01/rdf-schema#comment> "Breve descripci\u00F3n sobre un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto> <http://www.w3.org/2000/01/rdf-schema#label> "Asunto"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente> <http://www.w3.org/2000/01/rdf-schema#comment> "Assunto de un expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente> <http://www.w3.org/2000/01/rdf-schema#label> "Asunto"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo> <http://www.w3.org/2000/01/rdf-schema#comment> "Cargo que desempe\u00F1a un funcionario p\u00FAblico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo> <http://www.w3.org/2000/01/rdf-schema#label> "Cargo"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo> <http://www.w3.org/2000/01/rdf-schema#comment> "correo electr\u00F3nico de una persona o entidad"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo> <http://www.w3.org/2000/01/rdf-schema#label> "Correo electr\u00F3nico"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal> <http://www.w3.org/2000/01/rdf-schema#comment> "Direcci\u00F3n de correo electr\u00F3nico asociado a una persona"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal> <http://www.w3.org/2000/01/rdf-schema#label> "Correo electr\u00F3nico"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe un documento utilizado para sustentar un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion> <http://www.w3.org/2000/01/rdf-schema#label> "Descripci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa> <http://www.w3.org/2000/01/rdf-schema#comment> "Incluye la url del sitio web donde se encuentra publicada el acta generada a partir de una sesi\u00F3n del pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa> <http://www.w3.org/2000/01/rdf-schema#label> "Enlace al acta"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la p\u00E1gina web donde est\u00E1 publicado un determinado debate"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate> <http://www.w3.org/2000/01/rdf-schema#label> "Enlace al debate"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero de extensi\u00F3n asociado a una persona"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAmero de extensi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la fecha en la que se desarroll\u00F3 una sesi\u00F3n del pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se di\u00F3 inicio a un expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de Alta"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se finaliz\u00F3 un expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de cierre"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de finalizaci\u00F3n de pertenencia a una comisi\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha fin"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de finalizaci\u00F3n como portavoz de un grupo pol\u00EDtico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha fin"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de finalizaci\u00F3n como representante ciudadano"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de Finalizaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de inicio de participaci\u00F3n en una comisi\u00F3n del pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de inicio"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de inicio de como portavoz de un grupo pol\u00EDtico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de Inicio"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de inicio de como representante ciudadano (sea Alcalde o Concejal)"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de inicio"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de la junta a la que pertenece una determinada asociaci\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta> <http://www.w3.org/2000/01/rdf-schema#label> "Junta"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de una asociaci\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de una comisi\u00F3n del pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de un Grupo Pol\u00EDtico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero de un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAmero"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero del expediente asociado a un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAmero de expediente"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace al perfil o curriculum de una persona"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil> <http://www.w3.org/2000/01/rdf-schema#label> "Perfil"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision> <http://www.w3.org/2000/01/rdf-schema#comment> "Retransmisi\u00F3n de una sesi\u00F3n de un pleno o de una parte de esta"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision> <http://www.w3.org/2000/01/rdf-schema#label> "Retransmisi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate> <http://www.w3.org/2000/01/rdf-schema#comment> "Retransmisi\u00F3n del debade de un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate> <http://www.w3.org/2000/01/rdf-schema#label> "Retransmisi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero telef\u00F3nico de una persona"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAmero de tel\u00E9fono"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero de tel\u00E9fono correspondiente a un Grupo Pol\u00EDtico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#label> "Tel\u00E9fono"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad Administrativa en la que trabaja un funcionario p\u00FAblico"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#label> "Unidad Administrativa"@es .
+# 
+# http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#comment> "The first name of a person." .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre"@es .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#label> "firstName" .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# http://xmlns.com/foaf/0.1/lastName
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#comment> "The last name of a person." .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#label> "Apellido"@es .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#label> "lastName" .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent
+<http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Una entidad, sea esta una persona, un grupo, un software o cualquiere objeto f\u00EDsico"@es .
+<http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agente"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde> <http://www.w3.org/2000/01/rdf-schema#comment> "M\u00E1xima autoridad de un municipio, generalmente est\u00E1 encargado de presidir los plenos del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde> <http://www.w3.org/2000/01/rdf-schema#label> "Alcalde"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de ciudadanos que representan un barrio o entidad y que pueden participar en un pleno municipal"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion> <http://www.w3.org/2000/01/rdf-schema#label> "Asociaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> <http://www.w3.org/2000/01/rdf-schema#comment> "Clasifica a una sesi\u00F3n como ordinaria, extraordinara o extraordinaria urgente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> <http://www.w3.org/2000/01/rdf-schema#label> "Car\u00E1cter de la Sesi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que puede presentar ruegos en una sesi\u00F3n del pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano> <http://www.w3.org/2000/01/rdf-schema#label> "Ciudadano"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> <http://www.w3.org/2000/01/rdf-schema#comment> "Comisiones formadas en el pleno para tratar asuntos espec\u00EDficos"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision> <http://www.w3.org/2000/01/rdf-schema#label> "Comisi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n ternaria que indica que representantes forman parte de las diferentes comisiones y sus periodos"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante> <http://www.w3.org/2000/01/rdf-schema#label> "Comisi\u00F3n - Representante"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> <http://www.w3.org/2000/01/rdf-schema#comment> "Representante elegido por el pueblo para participar en los plenos municipales y tomar decisiones que beneficien a la ciudadan\u00EDa, entre otros."@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal> <http://www.w3.org/2000/01/rdf-schema#label> "Concejal"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relaci\u00F3n entre los representantes ciudadanos que exponen sus puntos de vista sobre los diferentes asuntos tratados en una sesi\u00F3n del pleno"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate> <http://www.w3.org/2000/01/rdf-schema#label> "Debate"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase para definir los documentos empleados en un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento> <http://www.w3.org/2000/01/rdf-schema#label> "Documento"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> <http://www.w3.org/2000/01/rdf-schema#comment> "Estado de un punto del orden del d\u00EDa, puede ser aprobado, rechazado, entre otros"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> <http://www.w3.org/2000/01/rdf-schema#label> "Estado Punto Orden del D\u00EDa"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> <http://www.w3.org/2000/01/rdf-schema#comment> "Expediente relacionado con un punto del orden del d\u00EDa y que abarca los documentos que sirven de sustento de dicho punto"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente> <http://www.w3.org/2000/01/rdf-schema#label> "Expediente"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario> <http://www.w3.org/2000/01/rdf-schema#comment> "Personas que portan conocimiento y documentaci\u00F3n necesaria a un expediente y que sirve para el desarrollo de un determinado punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario> <http://www.w3.org/2000/01/rdf-schema#label> "Funcionario"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo pol\u00EDtico que tiene parte en el pleno municipal"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo Pol\u00EDtico"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que toma parte activa en un pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que define la relaci\u00F3n entre los grupos pol\u00EDticos y sus representantes en un determinado periodo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz> <http://www.w3.org/2000/01/rdf-schema#label> "Portavoz"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de Procedimiento de un expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> <http://www.w3.org/2000/01/rdf-schema#label> "Procedimiento"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> <http://www.w3.org/2000/01/rdf-schema#comment> "Asuntos que se tratan en una sesi\u00F3n del pleno del ayuntamiento"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia> <http://www.w3.org/2000/01/rdf-schema#label> "Punto del Orden del D\u00EDa"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> <http://www.w3.org/2000/01/rdf-schema#comment> "Personas que interact\u00FAan de forma directa durante el desarrollo del pleno, y son los encargados de tomar decisiones"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano> <http://www.w3.org/2000/01/rdf-schema#label> "Representante Ciudadano"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> <http://www.w3.org/2000/01/rdf-schema#comment> "Sesiones en las que se tratan varios asuntos de inter\u00E9s para la ciudadan\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno> <http://www.w3.org/2000/01/rdf-schema#label> "Sesi\u00F3n del Pleno del Ayuntamiento"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipos de comisiones de un pleno municipal"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de comisi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipos de documentos que pueden ser presentados como sustento para un punto del orden del d\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Documento"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente> <http://www.w3.org/2000/01/rdf-schema#comment> "Diferentes tipos que puede tener un Expediente"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Expediente"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo que puede tener un punto de la sesi\u00F3n del pleno, como moci\u00F3n, pregunta, ruego, etc."@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Punto"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que permite describirl la relaci\u00F3n entre los Representantes ciudadanos que expresan su Voto sobre un Punto del Orden del D\u00EDa"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion> <http://www.w3.org/2000/01/rdf-schema#label> "Votaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que permite indicar el voto expresado por un representante ciudadano, pudiendo ser a favor, en contra o abstenci\u00F3n"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> <http://www.w3.org/2000/01/rdf-schema#label> "Voto"@es .
+# 
+# http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que describe una persona"@es .
+<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Personas"@es .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Una entidad, sea esta una persona, un grupo, un software o cualquiere objeto f\u00EDsico"@es .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agente"@es .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Cualquier documento f\u00EDsico o electr\u00F3nico"@es .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Documento"@es .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que describe una persona"@es .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/
+<http://purl.org/dc/terms/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/> <http://purl.org/dc/terms/title> "DCMI Metadata Terms - other"@en .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Extraordinaria
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Extraordinaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Extraordinaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Extraordinaria> <http://www.w3.org/2000/01/rdf-schema#label> "Extraordinaria"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#ExtraordinariaUrgente
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#ExtraordinariaUrgente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#ExtraordinariaUrgente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#ExtraordinariaUrgente> <http://www.w3.org/2000/01/rdf-schema#label> "Extraordinaria urgente"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Ordinaria
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Ordinaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Ordinaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Ordinaria> <http://www.w3.org/2000/01/rdf-schema#label> "Ordinaria"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Permanente
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Permanente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Permanente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Permanente> <http://www.w3.org/2000/01/rdf-schema#label> "Permanente"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AContestarEnProximaSesion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AContestarEnProximaSesion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AContestarEnProximaSesion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AContestarEnProximaSesion> <http://www.w3.org/2000/01/rdf-schema#label> "A contestar en pr\u00F3xima sesi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadaPropuestaAlternativa
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadaPropuestaAlternativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadaPropuestaAlternativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadaPropuestaAlternativa> <http://www.w3.org/2000/01/rdf-schema#label> "Aprobada propuesta alternativa"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Aprobado
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Aprobado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Aprobado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Aprobado> <http://www.w3.org/2000/01/rdf-schema#label> "Aprobado"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadoConEnmienda
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadoConEnmienda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadoConEnmienda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadoConEnmienda> <http://www.w3.org/2000/01/rdf-schema#label> "Aprobado con enmienda"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#PreguntaContestada
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#PreguntaContestada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#PreguntaContestada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#PreguntaContestada> <http://www.w3.org/2000/01/rdf-schema#label> "Pregunta contestada"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#QuedarEnterado
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#QuedarEnterado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#QuedarEnterado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#QuedarEnterado> <http://www.w3.org/2000/01/rdf-schema#label> "Quedar enterado"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Rechazado
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Rechazado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Rechazado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Rechazado> <http://www.w3.org/2000/01/rdf-schema#label> "Rechazado"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#SobreLaMesa
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#SobreLaMesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#SobreLaMesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#SobreLaMesa> <http://www.w3.org/2000/01/rdf-schema#label> "Sobre la mesa"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#abonoaAsociacionesDeMercadosAutogestionadosDeDeudasDeAntiguosTit
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#abonoaAsociacionesDeMercadosAutogestionadosDeDeudasDeAntiguosTit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#abonoaAsociacionesDeMercadosAutogestionadosDeDeudasDeAntiguosTit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#abonoaAsociacionesDeMercadosAutogestionadosDeDeudasDeAntiguosTit> <http://www.w3.org/2000/01/rdf-schema#label> "Abono a asociaciones de mercados autogestionados de deudas de antiguos tit..."@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#accesoaLaInformacionDeLaLeyDeTransparencia
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#accesoaLaInformacionDeLaLeyDeTransparencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#accesoaLaInformacionDeLaLeyDeTransparencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#accesoaLaInformacionDeLaLeyDeTransparencia> <http://www.w3.org/2000/01/rdf-schema#label> "Acceso a la informaci\u00F3n de la ley de transparencia"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#actividadDeDegustacionEnPuestoDeMercadoMunicipal
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#actividadDeDegustacionEnPuestoDeMercadoMunicipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#actividadDeDegustacionEnPuestoDeMercadoMunicipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#actividadDeDegustacionEnPuestoDeMercadoMunicipal> <http://www.w3.org/2000/01/rdf-schema#label> "Actividad de degustaci\u00F3n en puesto de mercado municipal"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaSolicitudDeDemandaDeE
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaSolicitudDeDemandaDeE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaSolicitudDeDemandaDeE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaSolicitudDeDemandaDeE> <http://www.w3.org/2000/01/rdf-schema#label> "Agencia de colocaci\u00F3n del Ayuntamiento de Valencia: solicitud de demanda de e..."@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaTratamientoDeOfertasDe
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaTratamientoDeOfertasDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaTratamientoDeOfertasDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaTratamientoDeOfertasDe> <http://www.w3.org/2000/01/rdf-schema#label> "Agencia de colocaci\u00F3n del Ayuntamiento de Valencia: tratamiento de ofertas de ..."@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#alegaciones
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#alegaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#alegaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#alegaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Alegaciones"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#altayMantenimientoEnFicheroDeAcreedoresCesionariosPersonalPropio
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#altayMantenimientoEnFicheroDeAcreedoresCesionariosPersonalPropio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#altayMantenimientoEnFicheroDeAcreedoresCesionariosPersonalPropio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#altayMantenimientoEnFicheroDeAcreedoresCesionariosPersonalPropio> <http://www.w3.org/2000/01/rdf-schema#label> "Alta y mantenimiento en fichero de acreedores cesionarios personal propio"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#aportaciónDeDocumentaciónaSolicitudesExpedientesYaEnTrámitePorElAyuntamiento
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#aportaci\u00F3nDeDocumentaci\u00F3naSolicitudesExpedientesYaEnTr\u00E1mitePorElAyuntamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#aportaci\u00F3nDeDocumentaci\u00F3naSolicitudesExpedientesYaEnTr\u00E1mitePorElAyuntamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#aportaci\u00F3nDeDocumentaci\u00F3naSolicitudesExpedientesYaEnTr\u00E1mitePorElAyuntamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Aportaci\u00F3n de documentaci\u00F3n a solicitudes/expedientes ya en tr\u00E1mite por el ayuntamiento"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeDependienteParaEjercerLaVentaEnUnPuestoDeMercado
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeDependienteParaEjercerLaVentaEnUnPuestoDeMercado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeDependienteParaEjercerLaVentaEnUnPuestoDeMercado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeDependienteParaEjercerLaVentaEnUnPuestoDeMercado> <http://www.w3.org/2000/01/rdf-schema#label> "Autorizaci\u00F3n de dependiente para ejercer la venta en un puesto de mercado"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeUsoTemporalDeLosDespachosLocalesUbicadosEnElCentro
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeUsoTemporalDeLosDespachosLocalesUbicadosEnElCentro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeUsoTemporalDeLosDespachosLocalesUbicadosEnElCentro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeUsoTemporalDeLosDespachosLocalesUbicadosEnElCentro> <http://www.w3.org/2000/01/rdf-schema#label> "Autorizaci\u00F3n de uso temporal de los despachos/locales ubicados en el centro"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionObrasEnUnPuestoDeMercadoMunicipalDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionObrasEnUnPuestoDeMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionObrasEnUnPuestoDeMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionObrasEnUnPuestoDeMercadoMunicipalDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Autorizaci\u00F3n de obras en un puesto de mercado municipal de distrito"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaEmpren2017
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaEmpren2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaEmpren2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaEmpren2017> <http://www.w3.org/2000/01/rdf-schema#label> "Ayudas municipales Valencia activa empren 2017"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaImpulsEconomic2017
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaImpulsEconomic2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaImpulsEconomic2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaImpulsEconomic2017> <http://www.w3.org/2000/01/rdf-schema#label> "Ayudas municipales Valencia activa impuls economic 2017"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasSeedVlcemprende2014
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasSeedVlcemprende2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasSeedVlcemprende2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasSeedVlcemprende2014> <http://www.w3.org/2000/01/rdf-schema#label> "Ayudas SEED VLCEMPRENDE 2014"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#becasDeFormacionEnElMarcoDelProgramaDePracticasFormativasParaJovenes
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#becasDeFormacionEnElMarcoDelProgramaDePracticasFormativasParaJovenes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#becasDeFormacionEnElMarcoDelProgramaDePracticasFormativasParaJovenes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#becasDeFormacionEnElMarcoDelProgramaDePracticasFormativasParaJovenes> <http://www.w3.org/2000/01/rdf-schema#label> "Becas de formaci\u00F3n en el marco del programa de pr\u00E1cticas formativas para j\u00F3venes"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#cambioDelEpigrafeDeVentaEnPuestosDeLosMercadosMunicipalesDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#cambioDelEpigrafeDeVentaEnPuestosDeLosMercadosMunicipalesDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#cambioDelEpigrafeDeVentaEnPuestosDeLosMercadosMunicipalesDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#cambioDelEpigrafeDeVentaEnPuestosDeLosMercadosMunicipalesDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Cambio del ep\u00EDgrafe de venta en puestos de los mercados municipales de distrito..."@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#certificadoDeInscripcionEnLaAgenciaDeColocacionaPunt
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#certificadoDeInscripcionEnLaAgenciaDeColocacionaPunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#certificadoDeInscripcionEnLaAgenciaDeColocacionaPunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#certificadoDeInscripcionEnLaAgenciaDeColocacionaPunt> <http://www.w3.org/2000/01/rdf-schema#label> "Certificado de inscripci\u00F3n en la agencia de colocaci\u00F3n a punt"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#denuncias
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#denuncias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#denuncias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#denuncias> <http://www.w3.org/2000/01/rdf-schema#label> "Denuncias"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ejercicioDelDerechoDePeticion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ejercicioDelDerechoDePeticion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ejercicioDelDerechoDePeticion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ejercicioDelDerechoDePeticion> <http://www.w3.org/2000/01/rdf-schema#label> "Ejercicio del derecho de petici\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#expedicionDeCarneDeVendedoraDeMercadoMunicipalDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#expedicionDeCarneDeVendedoraDeMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#expedicionDeCarneDeVendedoraDeMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#expedicionDeCarneDeVendedoraDeMercadoMunicipalDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Expedici\u00F3n de carn\u00E9 de vendedor_a de mercado municipal de distrito"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#gestionDeLaRepresentacionElectronicaParaGestionesaTravesDeInternet
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#gestionDeLaRepresentacionElectronicaParaGestionesaTravesDeInternet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#gestionDeLaRepresentacionElectronicaParaGestionesaTravesDeInternet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#gestionDeLaRepresentacionElectronicaParaGestionesaTravesDeInternet> <http://www.w3.org/2000/01/rdf-schema#label> "Gesti\u00F3n de la representaci\u00F3n electr\u00F3nica para gestiones a traves de internet"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#itinerarioParaLaCreacionyConsolidacionDeEmpresas
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#itinerarioParaLaCreacionyConsolidacionDeEmpresas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#itinerarioParaLaCreacionyConsolidacionDeEmpresas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#itinerarioParaLaCreacionyConsolidacionDeEmpresas> <http://www.w3.org/2000/01/rdf-schema#label> "Itinerario para la creaci\u00F3n y consolidaci\u00F3n de empresas"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacionDeHorarioDeAperturaEnUnMercadoMunicipalDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacionDeHorarioDeAperturaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacionDeHorarioDeAperturaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacionDeHorarioDeAperturaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Modificaci\u00F3n de horario de apertura en un mercado municipal de distrito"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacion_tarifas_de_mercados_autogestionados
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacion_tarifas_de_mercados_autogestionados> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacion_tarifas_de_mercados_autogestionados> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacion_tarifas_de_mercados_autogestionados> <http://www.w3.org/2000/01/rdf-schema#label> "Modificaci\u00F3n tarifas de mercados autogestionados"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificaciónDeLosDatosPersonalesQueAparecenEnLaSedeElectronica
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificaci\u00F3nDeLosDatosPersonalesQueAparecenEnLaSedeElectronica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificaci\u00F3nDeLosDatosPersonalesQueAparecenEnLaSedeElectronica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificaci\u00F3nDeLosDatosPersonalesQueAparecenEnLaSedeElectronica> <http://www.w3.org/2000/01/rdf-schema#label> "Modificaci\u00F3n de los datos personales que aparecen en la sede electr\u00F3nica"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#peticionDeCopiasyCertificacionesDeAcuerdos
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#peticionDeCopiasyCertificacionesDeAcuerdos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#peticionDeCopiasyCertificacionesDeAcuerdos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#peticionDeCopiasyCertificacionesDeAcuerdos> <http://www.w3.org/2000/01/rdf-schema#label> "Petici\u00F3n de copias y certificaciones de acuerdos"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#premiosInnovacionSocialCiudadDeValencia2016
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#premiosInnovacionSocialCiudadDeValencia2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#premiosInnovacionSocialCiudadDeValencia2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#premiosInnovacionSocialCiudadDeValencia2016> <http://www.w3.org/2000/01/rdf-schema#label> "Premios innovaci\u00F3n social Ciudad de Valencia 2016"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#publicacionEnElTablonDeEdictosDelAyuntamientoDeValencia
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#publicacionEnElTablonDeEdictosDelAyuntamientoDeValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#publicacionEnElTablonDeEdictosDelAyuntamientoDeValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#publicacionEnElTablonDeEdictosDelAyuntamientoDeValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3n en el tabl\u00F3n de edictos del Ayuntamiento de Valencia"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#realizacionDeActividadExtraordinariaEnUnMercadoMunicipalDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#realizacionDeActividadExtraordinariaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#realizacionDeActividadExtraordinariaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#realizacionDeActividadExtraordinariaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Realizaci\u00F3n de actividad extraordinaria en un mercado municipal de distrito"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionDeResponsabilidadPatrimonial
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionDeResponsabilidadPatrimonial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionDeResponsabilidadPatrimonial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionDeResponsabilidadPatrimonial> <http://www.w3.org/2000/01/rdf-schema#label> "Reclamaci\u00F3n de responsabilidad patrimonial"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesYQuejas
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesYQuejas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesYQuejas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesYQuejas> <http://www.w3.org/2000/01/rdf-schema#label> "Reclamaciones y quejas"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesoDenunciasEnMateriaDeConsumo
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesoDenunciasEnMateriaDeConsumo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesoDenunciasEnMateriaDeConsumo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesoDenunciasEnMateriaDeConsumo> <http://www.w3.org/2000/01/rdf-schema#label> "Reclamaciones o denuncias en materia de consumo"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#recursos
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#recursos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#recursos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#recursos> <http://www.w3.org/2000/01/rdf-schema#label> "Recursos"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#renunciaALaTitularidadDeUnPuestoEnUnMercadoMunicipalDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#renunciaALaTitularidadDeUnPuestoEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#renunciaALaTitularidadDeUnPuestoEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#renunciaALaTitularidadDeUnPuestoEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Renuncia a la titularidad de un puesto en un mercado municipal de distrito"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reparacionDeDeficienciasEnViaPublicaServicioValenciaSiempreNueva
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reparacionDeDeficienciasEnViaPublicaServicioValenciaSiempreNueva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reparacionDeDeficienciasEnViaPublicaServicioValenciaSiempreNueva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reparacionDeDeficienciasEnViaPublicaServicioValenciaSiempreNueva> <http://www.w3.org/2000/01/rdf-schema#label> "Reparaci\u00F3n de deficiencias en v\u00EDa p\u00FAblica - servicio \"Valencia siempre nueva\""@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sinEspecificar
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sinEspecificar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sinEspecificar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sinEspecificar> <http://www.w3.org/2000/01/rdf-schema#label> "Sin especificar"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeArbitrajeDeConsumo
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeArbitrajeDeConsumo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeArbitrajeDeConsumo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeArbitrajeDeConsumo> <http://www.w3.org/2000/01/rdf-schema#label> "Solicitud de arbitraje de consumo"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeHojasDeReclamacionesDeConsumoPorLosEmpresariosComerc
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeHojasDeReclamacionesDeConsumoPorLosEmpresariosComerc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeHojasDeReclamacionesDeConsumoPorLosEmpresariosComerc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeHojasDeReclamacionesDeConsumoPorLosEmpresariosComerc> <http://www.w3.org/2000/01/rdf-schema#label> "Solicitud de hojas de reclamaciones de consumo por los empresarios, comerc"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeInformacion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeInformacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeInformacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeInformacion> <http://www.w3.org/2000/01/rdf-schema#label> "Solicitud de informaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionDerivadaDeConvenioDeAutogestion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionDerivadaDeConvenioDeAutogestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionDerivadaDeConvenioDeAutogestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionDerivadaDeConvenioDeAutogestion> <http://www.w3.org/2000/01/rdf-schema#label> "Subenci\u00F3n derivada de convenios de autogesti\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionesParaLaPromocionDelTurismoDeComprasDirigidasAComercios
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionesParaLaPromocionDelTurismoDeComprasDirigidasAComercios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionesParaLaPromocionDelTurismoDeComprasDirigidasAComercios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionesParaLaPromocionDelTurismoDeComprasDirigidasAComercios> <http://www.w3.org/2000/01/rdf-schema#label> "Subenciones para la promoci\u00F3n del turismo de compras dirigidas a comercios"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subenciones_para_la_realizacion_de_proyectos_de_innovacion_social_2016
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subenciones_para_la_realizacion_de_proyectos_de_innovacion_social_2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subenciones_para_la_realizacion_de_proyectos_de_innovacion_social_2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subenciones_para_la_realizacion_de_proyectos_de_innovacion_social_2016> <http://www.w3.org/2000/01/rdf-schema#label> "Subenciones para la realizaci\u00F3n de proyectos de innovacion social 2016"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sugerencias
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sugerencias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sugerencias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sugerencias> <http://www.w3.org/2000/01/rdf-schema#label> "Sugerencias"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferenciaInterVivosDelDerechoDeOcupacionDeUnPuestoEnUnMercado
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferenciaInterVivosDelDerechoDeOcupacionDeUnPuestoEnUnMercado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferenciaInterVivosDelDerechoDeOcupacionDeUnPuestoEnUnMercado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferenciaInterVivosDelDerechoDeOcupacionDeUnPuestoEnUnMercado> <http://www.w3.org/2000/01/rdf-schema#label> "Transferencia inter vivos del derecho de ocupaci\u00F3n de un puesto en un mercado..."@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferencia_mortis_causa_del_derecho_de_ocupacion_de_un_puesto_en_un_mercado
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferencia_mortis_causa_del_derecho_de_ocupacion_de_un_puesto_en_un_mercado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferencia_mortis_causa_del_derecho_de_ocupacion_de_un_puesto_en_un_mercado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferencia_mortis_causa_del_derecho_de_ocupacion_de_un_puesto_en_un_mercado> <http://www.w3.org/2000/01/rdf-schema#label> "Transferencia mortis causa del derecho de ocupaci\u00F3n de un puesto en un mercado..."@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#traspasoDePuestoDeVentaEnUnMercadoMunicipalDeDistrito
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#traspasoDePuestoDeVentaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#traspasoDePuestoDeVentaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#traspasoDePuestoDeVentaEnUnMercadoMunicipalDeDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "Traspaso de puesto de venta en un mercado municipal de distrito"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#valenciaActivaEmplea2017
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#valenciaActivaEmplea2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#valenciaActivaEmplea2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#valenciaActivaEmplea2017> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia activa emplea 2017"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoComision#NoPermanente
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoComision#NoPermanente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoComision#NoPermanente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoComision#NoPermanente> <http://www.w3.org/2000/01/rdf-schema#label> "No permanente"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDeResolucion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDeResolucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDeResolucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDeResolucion> <http://www.w3.org/2000/01/rdf-schema#label> "Aprobaci\u00F3n de resoluci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDelActa
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDelActa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDelActa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDelActa> <http://www.w3.org/2000/01/rdf-schema#label> "Arobaci\u00F3n del acta"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#conPropuesta
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#conPropuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#conPropuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#conPropuesta> <http://www.w3.org/2000/01/rdf-schema#label> "Con propuesta"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#darCuenta
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#darCuenta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#darCuenta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#darCuenta> <http://www.w3.org/2000/01/rdf-schema#label> "Dar cuenta"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionDeUrgencia
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionDeUrgencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionDeUrgencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionDeUrgencia> <http://www.w3.org/2000/01/rdf-schema#label> "Declaraci\u00F3n de urgencia"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionInstitucional
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionInstitucional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionInstitucional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionInstitucional> <http://www.w3.org/2000/01/rdf-schema#label> "Declaraci\u00F3n institucional"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#interpelacion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#interpelacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#interpelacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#interpelacion> <http://www.w3.org/2000/01/rdf-schema#label> "Interpelaci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocion> <http://www.w3.org/2000/01/rdf-schema#label> "Moci\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocionUrgente
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocionUrgente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocionUrgente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocionUrgente> <http://www.w3.org/2000/01/rdf-schema#label> "Moci\u00F3n urgente"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#otro
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#otro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#otro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#otro> <http://www.w3.org/2000/01/rdf-schema#label> "Otro"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#pregunta
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#pregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#pregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#pregunta> <http://www.w3.org/2000/01/rdf-schema#label> "Pregunta"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#respuestaDePregunta
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#respuestaDePregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#respuestaDePregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#respuestaDePregunta> <http://www.w3.org/2000/01/rdf-schema#label> "Respuesta de pregunta"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#ruego
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#ruego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#ruego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#ruego> <http://www.w3.org/2000/01/rdf-schema#label> "Ruego"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#AFavor
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#AFavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#AFavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#AFavor> <http://www.w3.org/2000/01/rdf-schema#label> "A favor"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#Abstencion
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#Abstencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#Abstencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#Abstencion> <http://www.w3.org/2000/01/rdf-schema#label> "Abstensi\u00F3n"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#EnContra
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#EnContra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#EnContra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#EnContra> <http://www.w3.org/2000/01/rdf-schema#label> "En contra"@es .
+# 
+# http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/occ_ontology#titulo
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/occ_ontology#titulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/occ_ontology#titulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto> .
+<http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/occ_ontology#titulo> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00EDtulo"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Rol de un representante ciudadano en el pleno, ej. Alcalde, Concejal"@es .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Rol"@es .
+# 
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inidca la pertenencia de una persona a un grupo"@es .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Links one Political Group with its members" .
+<http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#label> "es miembro de"@es .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

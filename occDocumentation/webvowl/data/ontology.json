@@ -1,0 +1,3095 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl", "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2000/10/swap/pim/contact" ],
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#",
+    "labels" : {
+      "es" : "Plenos del Ayuntamiento de Valencia"
+    },
+    "comments" : {
+      "es" : "Ontología que modela elementos de un pleno municipal"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+        "type" : "label"
+      } ],
+      "hasVersion" : [ {
+        "identifier" : "hasVersion",
+        "language" : "es",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "hasAuthor" : [ {
+        "identifier" : "hasAuthor",
+        "language" : "es",
+        "value" : "Área Hackers Cívics",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 31,
+    "objectPropertyCount" : 48,
+    "datatypePropertyCount" : 36,
+    "individualCount" : 78
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "111",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#CaracterSesion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CaracterSesion",
+      "es" : "Carácter de la Sesión"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Ordinaria",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion",
+      "labels" : {
+        "IRI-based" : "Ordinaria",
+        "es" : "Ordinaria"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#ExtraordinariaUrgente",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion",
+      "labels" : {
+        "IRI-based" : "ExtraordinariaUrgente",
+        "es" : "Extraordinaria urgente"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Extraordinaria",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion",
+      "labels" : {
+        "IRI-based" : "Extraordinaria",
+        "es" : "Extraordinaria"
+      }
+    } ],
+    "comment" : {
+      "es" : "Clasifica a una sesión como ordinaria, extraordinara o extraordinaria urgente"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "equivalent" : [ "13" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "es" : "Agente"
+    },
+    "comment" : {
+      "es" : "Una entidad, sea esta una persona, un grupo, un software o cualquiere objeto físico"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoPunto",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TipoPunto",
+      "es" : "Tipo de Punto"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionDeUrgencia",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "declaracionDeUrgencia",
+        "es" : "Declaración de urgencia"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocionUrgente",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "mocionUrgente",
+        "es" : "Moción urgente"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDelActa",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "aprobacionDelActa",
+        "es" : "Arobación del acta"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#declaracionInstitucional",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "declaracionInstitucional",
+        "es" : "Declaración institucional"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#darCuenta",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "darCuenta",
+        "es" : "Dar cuenta"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#mocion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "mocion",
+        "es" : "Moción"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#aprobacionDeResolucion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "aprobacionDeResolucion",
+        "es" : "Aprobación de resolución"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#respuestaDePregunta",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "respuestaDePregunta",
+        "es" : "Respuesta de pregunta"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#ruego",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "ruego",
+        "es" : "Ruego"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#pregunta",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "pregunta",
+        "es" : "Pregunta"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#conPropuesta",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "conPropuesta",
+        "es" : "Con propuesta"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#otro",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "otro",
+        "es" : "Otro"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/occ_ontology#titulo",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/occ_ontology",
+      "labels" : {
+        "IRI-based" : "titulo",
+        "es" : "Título"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto#interpelacion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoPunto",
+      "labels" : {
+        "IRI-based" : "interpelacion",
+        "es" : "Interpelación"
+      }
+    } ],
+    "comment" : {
+      "es" : "Tipo que puede tener un punto de la sesión del pleno, como moción, pregunta, ruego, etc."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Ciudadano",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ciudadano",
+      "es" : "Ciudadano"
+    },
+    "comment" : {
+      "es" : "Persona que puede presentar ruegos en una sesión del pleno del ayuntamiento"
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Persona",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Persona",
+      "es" : "Persona"
+    },
+    "subClasses" : [ "31", "21", "32" ],
+    "comment" : {
+      "es" : "Persona que toma parte activa en un pleno del ayuntamiento"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Portavoz",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Portavoz",
+      "es" : "Portavoz"
+    },
+    "comment" : {
+      "es" : "Clase que define la relación entre los grupos políticos y sus representantes en un determinado periodo"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Voto",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Voto",
+      "es" : "Voto"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#AFavor",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto",
+      "labels" : {
+        "IRI-based" : "AFavor",
+        "es" : "A favor"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#EnContra",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto",
+      "labels" : {
+        "IRI-based" : "EnContra",
+        "es" : "En contra"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto#Abstencion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Voto",
+      "labels" : {
+        "IRI-based" : "Abstencion",
+        "es" : "Abstensión"
+      }
+    } ],
+    "comment" : {
+      "es" : "Clase que permite indicar el voto expresado por un representante ciudadano, pudiendo ser a favor, en contra o abstención"
+    },
+    "id" : "43"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Documento",
+    "equivalent" : [ "48" ],
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Documento",
+      "es" : "Documento"
+    },
+    "comment" : {
+      "es" : "Clase para definir los documentos empleados en un punto del orden del día"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Votacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Votacion",
+      "es" : "Votación"
+    },
+    "comment" : {
+      "es" : "Clase que permite describirl la relación entre los Representantes ciudadanos que expresan su Voto sobre un Punto del Orden del Día"
+    },
+    "id" : "65"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "es" : "Person"
+    },
+    "comment" : {
+      "es" : "Clase que describe una persona"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Expediente",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expediente",
+      "es" : "Expediente"
+    },
+    "comment" : {
+      "es" : "Expediente relacionado con un punto del orden del día y que abarca los documentos que sirven de sustento de dicho punto"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#GrupoPolitico",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrupoPolitico",
+      "es" : "Grupo Político"
+    },
+    "comment" : {
+      "es" : "Grupo político que tiene parte en el pleno municipal"
+    },
+    "id" : "78",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Alcalde",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Alcalde",
+      "es" : "Alcalde"
+    },
+    "comment" : {
+      "es" : "Máxima autoridad de un municipio, generalmente está encargado de presidir los plenos del ayuntamiento"
+    },
+    "id" : "84",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#SesionPleno",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SesionPleno",
+      "es" : "Sesión del Pleno del Ayuntamiento"
+    },
+    "comment" : {
+      "es" : "Sesiones en las que se tratan varios asuntos de interés para la ciudadanía"
+    },
+    "id" : "36"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#RepresentanteCiudadano",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RepresentanteCiudadano",
+      "es" : "Representante Ciudadano"
+    },
+    "subClasses" : [ "81", "84" ],
+    "comment" : {
+      "es" : "Personas que interactúan de forma directa durante el desarrollo del pleno, y son los encargados de tomar decisiones"
+    },
+    "id" : "32",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Collection",
+      "en" : "Collection"
+    },
+    "subClasses" : [ "78" ],
+    "comment" : {
+      "undefined" : "Any container for entities that share one or more common properties. E.g. \"stone objects\", \"the nurses\", \"the Louvre Aegyptian collection\". A collection is not a logical class: a collection is a first-order entity, while a class is a second-order one."
+    },
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoComision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TipoComision",
+      "es" : "Tipo de comisión"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoComision#NoPermanente",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/TipoComision",
+      "labels" : {
+        "IRI-based" : "NoPermanente",
+        "es" : "No permanente"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion#Permanente",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/CaracterSesion",
+      "labels" : {
+        "IRI-based" : "Permanente",
+        "es" : "Permanente"
+      }
+    } ],
+    "comment" : {
+      "es" : "Tipos de comisiones de un pleno municipal"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#ComisionRepresentante",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComisionRepresentante",
+      "es" : "Comisión - Representante"
+    },
+    "comment" : {
+      "es" : "Relación ternaria que indica que representantes forman parte de las diferentes comisiones y sus periodos"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Procedimiento",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Procedimiento",
+      "es" : "Procedimiento"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#becasDeFormacionEnElMarcoDelProgramaDePracticasFormativasParaJovenes",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "becasDeFormacionEnElMarcoDelProgramaDePracticasFormativasParaJovenes",
+        "es" : "Becas de formación en el marco del programa de prácticas formativas para jóvenes"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#altayMantenimientoEnFicheroDeAcreedoresCesionariosPersonalPropio",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "altayMantenimientoEnFicheroDeAcreedoresCesionariosPersonalPropio",
+        "es" : "Alta y mantenimiento en fichero de acreedores cesionarios personal propio"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#expedicionDeCarneDeVendedoraDeMercadoMunicipalDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "expedicionDeCarneDeVendedoraDeMercadoMunicipalDeDistrito",
+        "es" : "Expedición de carné de vendedor_a de mercado municipal de distrito"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#recursos",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "recursos",
+        "es" : "Recursos"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#certificadoDeInscripcionEnLaAgenciaDeColocacionaPunt",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "certificadoDeInscripcionEnLaAgenciaDeColocacionaPunt",
+        "es" : "Certificado de inscripción en la agencia de colocación a punt"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeInformacion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "solicitudDeInformacion",
+        "es" : "Solicitud de información"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionesParaLaPromocionDelTurismoDeComprasDirigidasAComercios",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "subencionesParaLaPromocionDelTurismoDeComprasDirigidasAComercios",
+        "es" : "Subenciones para la promoción del turismo de compras dirigidas a comercios"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#itinerarioParaLaCreacionyConsolidacionDeEmpresas",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "itinerarioParaLaCreacionyConsolidacionDeEmpresas",
+        "es" : "Itinerario para la creación y consolidación de empresas"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#cambioDelEpigrafeDeVentaEnPuestosDeLosMercadosMunicipalesDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "cambioDelEpigrafeDeVentaEnPuestosDeLosMercadosMunicipalesDeDistrito",
+        "es" : "Cambio del epígrafe de venta en puestos de los mercados municipales de distrito..."
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#abonoaAsociacionesDeMercadosAutogestionadosDeDeudasDeAntiguosTit",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "abonoaAsociacionesDeMercadosAutogestionadosDeDeudasDeAntiguosTit",
+        "es" : "Abono a asociaciones de mercados autogestionados de deudas de antiguos tit..."
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#traspasoDePuestoDeVentaEnUnMercadoMunicipalDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "traspasoDePuestoDeVentaEnUnMercadoMunicipalDeDistrito",
+        "es" : "Traspaso de puesto de venta en un mercado municipal de distrito"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionObrasEnUnPuestoDeMercadoMunicipalDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "autorizacionObrasEnUnPuestoDeMercadoMunicipalDeDistrito",
+        "es" : "Autorización de obras en un puesto de mercado municipal de distrito"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#renunciaALaTitularidadDeUnPuestoEnUnMercadoMunicipalDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "renunciaALaTitularidadDeUnPuestoEnUnMercadoMunicipalDeDistrito",
+        "es" : "Renuncia a la titularidad de un puesto en un mercado municipal de distrito"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sugerencias",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "sugerencias",
+        "es" : "Sugerencias"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaTratamientoDeOfertasDe",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "agenciaDeColocacionDelAyuntamientoDeValenciaTratamientoDeOfertasDe",
+        "es" : "Agencia de colocación del Ayuntamiento de Valencia: tratamiento de ofertas de ..."
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#alegaciones",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "alegaciones",
+        "es" : "Alegaciones"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesYQuejas",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "reclamacionesYQuejas",
+        "es" : "Reclamaciones y quejas"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#realizacionDeActividadExtraordinariaEnUnMercadoMunicipalDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "realizacionDeActividadExtraordinariaEnUnMercadoMunicipalDeDistrito",
+        "es" : "Realización de actividad extraordinaria en un mercado municipal de distrito"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reparacionDeDeficienciasEnViaPublicaServicioValenciaSiempreNueva",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "reparacionDeDeficienciasEnViaPublicaServicioValenciaSiempreNueva",
+        "es" : "Reparación de deficiencias en vía pública - servicio \"Valencia siempre nueva\""
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ejercicioDelDerechoDePeticion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "ejercicioDelDerechoDePeticion",
+        "es" : "Ejercicio del derecho de petición"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeDependienteParaEjercerLaVentaEnUnPuestoDeMercado",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "autorizacionDeDependienteParaEjercerLaVentaEnUnPuestoDeMercado",
+        "es" : "Autorización de dependiente para ejercer la venta en un puesto de mercado"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subenciones_para_la_realizacion_de_proyectos_de_innovacion_social_2016",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "subenciones_para_la_realizacion_de_proyectos_de_innovacion_social_2016",
+        "es" : "Subenciones para la realización de proyectos de innovacion social 2016"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificaciónDeLosDatosPersonalesQueAparecenEnLaSedeElectronica",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "modificaciónDeLosDatosPersonalesQueAparecenEnLaSedeElectronica",
+        "es" : "Modificación de los datos personales que aparecen en la sede electrónica"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#valenciaActivaEmplea2017",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "valenciaActivaEmplea2017",
+        "es" : "Valencia activa emplea 2017"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#gestionDeLaRepresentacionElectronicaParaGestionesaTravesDeInternet",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "gestionDeLaRepresentacionElectronicaParaGestionesaTravesDeInternet",
+        "es" : "Gestión de la representación electrónica para gestiones a traves de internet"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaEmpren2017",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "ayudasMunicipalesValenciaActivaEmpren2017",
+        "es" : "Ayudas municipales Valencia activa empren 2017"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionesoDenunciasEnMateriaDeConsumo",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "reclamacionesoDenunciasEnMateriaDeConsumo",
+        "es" : "Reclamaciones o denuncias en materia de consumo"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#publicacionEnElTablonDeEdictosDelAyuntamientoDeValencia",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "publicacionEnElTablonDeEdictosDelAyuntamientoDeValencia",
+        "es" : "Publicación en el tablón de edictos del Ayuntamiento de Valencia"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#agenciaDeColocacionDelAyuntamientoDeValenciaSolicitudDeDemandaDeE",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "agenciaDeColocacionDelAyuntamientoDeValenciaSolicitudDeDemandaDeE",
+        "es" : "Agencia de colocación del Ayuntamiento de Valencia: solicitud de demanda de e..."
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#accesoaLaInformacionDeLaLeyDeTransparencia",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "accesoaLaInformacionDeLaLeyDeTransparencia",
+        "es" : "Acceso a la información de la ley de transparencia"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#sinEspecificar",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "sinEspecificar",
+        "es" : "Sin especificar"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasSeedVlcemprende2014",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "ayudasSeedVlcemprende2014",
+        "es" : "Ayudas SEED VLCEMPRENDE 2014"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#ayudasMunicipalesValenciaActivaImpulsEconomic2017",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "ayudasMunicipalesValenciaActivaImpulsEconomic2017",
+        "es" : "Ayudas municipales Valencia activa impuls economic 2017"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#aportaciónDeDocumentaciónaSolicitudesExpedientesYaEnTrámitePorElAyuntamiento",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "aportaciónDeDocumentaciónaSolicitudesExpedientesYaEnTrámitePorElAyuntamiento",
+        "es" : "Aportación de documentación a solicitudes/expedientes ya en trámite por el ayuntamiento"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#autorizacionDeUsoTemporalDeLosDespachosLocalesUbicadosEnElCentro",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "autorizacionDeUsoTemporalDeLosDespachosLocalesUbicadosEnElCentro",
+        "es" : "Autorización de uso temporal de los despachos/locales ubicados en el centro"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacion_tarifas_de_mercados_autogestionados",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "modificacion_tarifas_de_mercados_autogestionados",
+        "es" : "Modificación tarifas de mercados autogestionados"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeHojasDeReclamacionesDeConsumoPorLosEmpresariosComerc",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "solicitudDeHojasDeReclamacionesDeConsumoPorLosEmpresariosComerc",
+        "es" : "Solicitud de hojas de reclamaciones de consumo por los empresarios, comerc"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferencia_mortis_causa_del_derecho_de_ocupacion_de_un_puesto_en_un_mercado",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "transferencia_mortis_causa_del_derecho_de_ocupacion_de_un_puesto_en_un_mercado",
+        "es" : "Transferencia mortis causa del derecho de ocupación de un puesto en un mercado..."
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#actividadDeDegustacionEnPuestoDeMercadoMunicipal",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "actividadDeDegustacionEnPuestoDeMercadoMunicipal",
+        "es" : "Actividad de degustación en puesto de mercado municipal"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#premiosInnovacionSocialCiudadDeValencia2016",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "premiosInnovacionSocialCiudadDeValencia2016",
+        "es" : "Premios innovación social Ciudad de Valencia 2016"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#peticionDeCopiasyCertificacionesDeAcuerdos",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "peticionDeCopiasyCertificacionesDeAcuerdos",
+        "es" : "Petición de copias y certificaciones de acuerdos"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#transferenciaInterVivosDelDerechoDeOcupacionDeUnPuestoEnUnMercado",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "transferenciaInterVivosDelDerechoDeOcupacionDeUnPuestoEnUnMercado",
+        "es" : "Transferencia inter vivos del derecho de ocupación de un puesto en un mercado..."
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#solicitudDeArbitrajeDeConsumo",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "solicitudDeArbitrajeDeConsumo",
+        "es" : "Solicitud de arbitraje de consumo"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#subencionDerivadaDeConvenioDeAutogestion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "subencionDerivadaDeConvenioDeAutogestion",
+        "es" : "Subención derivada de convenios de autogestión"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#modificacionDeHorarioDeAperturaEnUnMercadoMunicipalDeDistrito",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "modificacionDeHorarioDeAperturaEnUnMercadoMunicipalDeDistrito",
+        "es" : "Modificación de horario de apertura en un mercado municipal de distrito"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#denuncias",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "denuncias",
+        "es" : "Denuncias"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento#reclamacionDeResponsabilidadPatrimonial",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/Procedimiento",
+      "labels" : {
+        "IRI-based" : "reclamacionDeResponsabilidadPatrimonial",
+        "es" : "Reclamación de responsabilidad patrimonial"
+      }
+    } ],
+    "comment" : {
+      "es" : "Tipo de Procedimiento de un expediente"
+    },
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "111",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#PuntoOrdenDia",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PuntoOrdenDia",
+      "es" : "Punto del Orden del Día"
+    },
+    "comment" : {
+      "es" : "Asuntos que se tratan en una sesión del pleno del ayuntamiento"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoDocumento",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TipoDocumento",
+      "es" : "Tipo de Documento"
+    },
+    "comment" : {
+      "es" : "Tipos de documentos que pueden ser presentados como sustento para un punto del orden del día"
+    },
+    "id" : "117"
+  }, {
+    "iri" : "http://www.w3.org/2000/10/swap/pim/contact#Person",
+    "baseIri" : "http://www.w3.org/2000/10/swap/pim/contact",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "es" : "Personas"
+    },
+    "comment" : {
+      "es" : "Clase que describe una persona"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Debate",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Debate",
+      "es" : "Debate"
+    },
+    "comment" : {
+      "es" : "Indica la relación entre los representantes ciudadanos que exponen sus puntos de vista sobre los diferentes asuntos tratados en una sesión del pleno"
+    },
+    "id" : "50"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Asociacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asociacion",
+      "es" : "Asociación"
+    },
+    "comment" : {
+      "es" : "Grupo de ciudadanos que representan un barrio o entidad y que pueden participar en un pleno municipal"
+    },
+    "id" : "73"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Funcionario",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Funcionario",
+      "es" : "Funcionario"
+    },
+    "comment" : {
+      "es" : "Personas que portan conocimiento y documentación necesaria a un expediente y que sirve para el desarrollo de un determinado punto del orden del día"
+    },
+    "id" : "31",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Comision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Comision",
+      "es" : "Comisión"
+    },
+    "comment" : {
+      "es" : "Comisiones formadas en el pleno para tratar asuntos específicos"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#Concejal",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concejal",
+      "es" : "Concejal"
+    },
+    "comment" : {
+      "es" : "Representante elegido por el pueblo para participar en los plenos municipales y tomar decisiones que beneficien a la ciudadanía, entre otros."
+    },
+    "id" : "81",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "es" : "Documento"
+    },
+    "comment" : {
+      "es" : "Cualquier documento físico o electrónico"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#TipoExpediente",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TipoExpediente",
+      "es" : "Tipo de Expediente"
+    },
+    "comment" : {
+      "es" : "Diferentes tipos que puede tener un Expediente"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#EstadoPuntoOD",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EstadoPuntoOD",
+      "es" : "Estado Punto Orden del Día"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#PreguntaContestada",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "PreguntaContestada",
+        "es" : "Pregunta contestada"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Rechazado",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "Rechazado",
+        "es" : "Rechazado"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#SobreLaMesa",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "SobreLaMesa",
+        "es" : "Sobre la mesa"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadaPropuestaAlternativa",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "AprobadaPropuestaAlternativa",
+        "es" : "Aprobada propuesta alternativa"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AContestarEnProximaSesion",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "AContestarEnProximaSesion",
+        "es" : "A contestar en próxima sesión"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#Aprobado",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "Aprobado",
+        "es" : "Aprobado"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#AprobadoConEnmienda",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "AprobadoConEnmienda",
+        "es" : "Aprobado con enmienda"
+      }
+    }, {
+      "iri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD#QuedarEnterado",
+      "baseIri" : "http://www.opencitycouncil.org/resource/plenosAyuntamiento/occ_ontology/EstadoPuntoOD",
+      "labels" : {
+        "IRI-based" : "QuedarEnterado",
+        "es" : "Quedar enterado"
+      }
+    } ],
+    "comment" : {
+      "es" : "Estado de un punto del orden del día, puede ser aprobado, rechazado, entre otros"
+    },
+    "id" : "41"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent",
+    "equivalent" : [ "12" ],
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "es" : "Agente"
+    },
+    "comment" : {
+      "es" : "Una entidad, sea esta una persona, un grupo, un software o cualquiere objeto físico"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "13"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinEnComision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "fechaFinEnComision",
+      "es" : "Fecha fin"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha de finalización de pertenencia a una comisión"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoComisionDe",
+    "inverse" : "7",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "esTipoComisionDe",
+      "es" : "Es tipo comisión de"
+    },
+    "domain" : "5",
+    "comment" : {
+      "es" : "Relaciona los tipos de comisión con aquellas comisiones que pertenecen a cada tipo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numeroExpediente",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "numeroExpediente",
+      "es" : "Número de expediente"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Número del expediente asociado a un punto del orden del día"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estudia",
+    "inverse" : "16",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "estudia",
+      "es" : "Estudia"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Relaciona las comisiones con los puntos del orden del día que le corresponden a esta"
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://purl.org/dc/terms/date",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "date",
+      "es" : "Fecha"
+    },
+    "domain" : "18",
+    "comment" : {
+      "es" : "Indica la fecha en la que ocurrió un evento"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoPunto",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "tieneTipoPunto",
+      "es" : "Tipo de Punto"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Indica el tipo de un punto del orden del día"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tratadoPor",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "tratadoPor",
+      "es" : "Tratado Por"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relaciona un punto del orden del día con la comisión a cargo de este"
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlaceActa",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "enlaceActa",
+      "es" : "Enlace al acta"
+    },
+    "domain" : "36",
+    "comment" : {
+      "es" : "Incluye la url del sitio web donde se encuentra publicada el acta generada a partir de una sesión del pleno del ayuntamiento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fecha",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "fecha",
+      "es" : "Fecha"
+    },
+    "domain" : "36",
+    "comment" : {
+      "es" : "Indica la fecha en la que se desarrolló una sesión del pleno del ayuntamiento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneEstado",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "tieneEstado",
+      "es" : "Tiene Estado"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relación entre un punto del orden del día y su respectivo estado"
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioRepresentacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "fechaInicioRepresentacion",
+      "es" : "Fecha de inicio"
+    },
+    "domain" : "32",
+    "comment" : {
+      "es" : "Fecha de inicio de como representante ciudadano (sea Alcalde o Concejal)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoExpediente",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "tieneTipoExpediente",
+      "es" : "Tipo de Expediente"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Indica el tipo de un expediente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firmadoPor",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "firmadoPor",
+      "es" : "Firmado por"
+    },
+    "domain" : "18",
+    "comment" : {
+      "es" : "Relaciona los documentos de un expediente con el/los responsable(s) de realizar y firmar ese documento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esDebateDe",
+    "inverse" : "51",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "esDebateDe",
+      "es" : "Es debate de"
+    },
+    "domain" : "50",
+    "comment" : {
+      "es" : "Relaciona un debate con un punto del orden del día"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#extension",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "extension",
+      "es" : "Número de extensión"
+    },
+    "domain" : "22",
+    "comment" : {
+      "es" : "Número de extensión asociado a una persona"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://dbpedia.org/ontology#isPartOf",
+    "inverse" : "56",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "es" : "es parte de"
+    },
+    "domain" : "18",
+    "subproperty" : [ "57" ],
+    "comment" : {
+      "es" : "propiedad para relacionar el todo con sus partes"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/dc/terms/created",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "hasVersion" : [ {
+        "identifier" : "hasVersion",
+        "language" : "undefined",
+        "value" : "http://dublincore.org/usage/terms/history/#created-003",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "created",
+      "en" : "Date Created",
+      "es" : "Fecha de creación"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Date of creation of the resource."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#perfil",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "perfil",
+      "es" : "Perfil"
+    },
+    "domain" : "22",
+    "comment" : {
+      "es" : "Enlace al perfil o curriculum de una persona"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/lastName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "64",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lastName",
+      "es" : "Apellido",
+      "undefined" : "lastName"
+    },
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "The last name of a person."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioEnComision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "fechaInicioEnComision",
+      "es" : "Fecha de inicio"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha de inicio de participación en una comisión del pleno del ayuntamiento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneDebate",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "tieneDebate",
+      "es" : "Tiene Debate"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relación entre un punto del orden del día y su respectivo debate"
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneCaracter",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "tieneCaracter",
+      "es" : "Tiene Carácter"
+    },
+    "domain" : "36",
+    "comment" : {
+      "es" : "Relaciona una sesión del pleno con su carácter (ordinaria, extraordinaria, extraordinaria urgente)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreAsociacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "nombreAsociacion",
+      "es" : "Nombre"
+    },
+    "domain" : "73",
+    "comment" : {
+      "es" : "Nombre de una asociación"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soportadoPor",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "soportadoPor",
+      "es" : "Soportado por"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relaciona un punto del orden del día con el expediente que contiene información que lo soporta"
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefono",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "telefono",
+      "es" : "Número de teléfono"
+    },
+    "domain" : "22",
+    "comment" : {
+      "es" : "Número telefónico de una persona"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "tieneVotacion",
+      "es" : "Votación"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relaciona un punto del orden del día con la votación que este tuvo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esMiembroDe",
+    "inverse" : "82",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "esMiembroDe",
+      "es" : "Es miembro de"
+    },
+    "domain" : "81",
+    "comment" : {
+      "es" : "Relaciona un concejal con la comisión a la que pertenece en un periodo de tiempo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "retransmision",
+      "es" : "Retransmisión"
+    },
+    "domain" : "36",
+    "comment" : {
+      "es" : "Retransmisión de una sesión de un pleno o de una parte de esta"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#descripcion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "descripcion",
+      "es" : "Descripción"
+    },
+    "domain" : "18",
+    "comment" : {
+      "es" : "Describe un documento utilizado para sustentar un punto del orden del día"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#estaEnAsociacion",
+    "inverse" : "87",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "estaEnAsociacion",
+      "es" : "Está En Asociación"
+    },
+    "domain" : "21",
+    "comment" : {
+      "es" : "Relación que indica los ciudadanos que pertenecen a una determinada asociación y que serán quienes puedan participar en un pleno municipal"
+    },
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#unidadAdministrativa",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "unidadAdministrativa",
+      "es" : "Unidad Administrativa"
+    },
+    "domain" : "31",
+    "comment" : {
+      "es" : "Unidad Administrativa en la que trabaja un funcionario público"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "range" : "79",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asunto",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "asunto",
+      "es" : "Asunto"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Breve descripción sobre un punto del orden del día"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "range" : "32",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "32",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "22",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archivadoEn",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "archivadoEn",
+      "es" : "Archivado En"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "18",
+    "comment" : {
+      "es" : "Relaciona los documentos con su respectivo expediente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#enlcaceDebate",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "enlcaceDebate",
+      "es" : "Enlace al debate"
+    },
+    "domain" : "50",
+    "comment" : {
+      "es" : "Enlace a la página web donde está publicado un determinado debate"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaAlta",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "fechaAlta",
+      "es" : "Fecha de Alta"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Fecha en la que se dió inicio a un expediente"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esRepresentanteDe",
+    "inverse" : "99",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "esRepresentanteDe",
+      "es" : "Es representante de"
+    },
+    "domain" : "81",
+    "comment" : {
+      "es" : "Relaciona un concejal con el grupo político del cual es portavoz"
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#retransmisionDebate",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "retransmisionDebate",
+      "es" : "Retransmisión"
+    },
+    "domain" : "50",
+    "comment" : {
+      "es" : "Retransmisión del debade de un punto del orden del día"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participaEn",
+    "inverse" : "105",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "participaEn",
+      "es" : "Participa En"
+    },
+    "domain" : "21",
+    "comment" : {
+      "es" : "Permite definir que ciudadanos participan en un determinado orden del día"
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinRepresentacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "fechaFinRepresentacion",
+      "es" : "Fecha de Finalización"
+    },
+    "domain" : "32",
+    "comment" : {
+      "es" : "Fecha de finalización como representante ciudadano"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoComision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "tieneTipoComision",
+      "es" : "Tiene tipo comisión"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Indica el tipo al que pertenece una comisión"
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "22",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/dc/terms/alternative",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "alternative",
+      "es" : "Alternativo"
+    },
+    "domain" : "18",
+    "comment" : {
+      "es" : "Título alternativo asignado a un documento"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "hasVersion" : [ {
+        "identifier" : "hasVersion",
+        "language" : "undefined",
+        "value" : "http://dublincore.org/usage/terms/history/#titleT-002",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "Title"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "A name given to the resource."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#miembroAsociacion",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "miembroAsociacion",
+      "es" : "MiembroDeAsociación"
+    },
+    "domain" : "73",
+    "comment" : {
+      "es" : "Relaciona una asociación con sus respectivos miembros"
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneComisionRepresentante",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "tieneComisionRepresentante",
+      "es" : "Comisión-representante"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Propiedad que permite definir la relación ternaria entre comisiones, sus miembros y sus periodos"
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneRepresentante",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "tieneRepresentante",
+      "es" : "Representante"
+    },
+    "domain" : "42",
+    "comment" : {
+      "es" : "Indica el representante (concejal) de un grupo político que a su vez es el portavoz"
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneParticipante",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "tieneParticipante",
+      "es" : "Tiene Participante"
+    },
+    "domain" : "50",
+    "comment" : {
+      "es" : "Relación que indica que representantes ciudadanos participan en un debate"
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParteDe",
+    "inverse" : "120",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "esParteDe",
+      "es" : "Es parte de"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relaciona un punto del orden del día con la sesión en la que fue tratado"
+    },
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#archiva",
+    "inverse" : "57",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "archiva",
+      "es" : "Archiva"
+    },
+    "superproperty" : [ "56" ],
+    "domain" : "10",
+    "comment" : {
+      "es" : "Relaciona los expedientes con los documentos contenidos en este"
+    },
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoDocumento",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "tieneTipoDocumento",
+      "es" : "Tipo de documento"
+    },
+    "domain" : "18",
+    "comment" : {
+      "es" : "Indica el tipo de un documento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneMiembro",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "tieneMiembro",
+      "es" : "Tiene Miembro"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Relación que indica cuando un representante es miembro de una comisión"
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoPuntoDe",
+    "inverse" : "23",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "esTipoPuntoDe",
+      "es" : "Es tipo punto de"
+    },
+    "domain" : "20",
+    "comment" : {
+      "es" : "Indica que puntos del orden del día son de un determinado tipo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esPortavozDe",
+    "inverse" : "125",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "esPortavozDe",
+      "es" : "Es portavoz de"
+    },
+    "domain" : "42",
+    "comment" : {
+      "es" : "Relaciona un grupo político con su respectivo portavoz"
+    },
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correoPersonal",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "correoPersonal",
+      "es" : "Correo electrónico"
+    },
+    "domain" : "12",
+    "comment" : {
+      "es" : "Dirección de correo electrónico asociado a una persona"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotanteEn",
+    "inverse" : "129",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "esVotanteEn",
+      "es" : "Es votante en"
+    },
+    "domain" : "32",
+    "comment" : {
+      "es" : "Permite indicar un representante ciudadano que participa en la Votación de un punto del orden del día"
+    },
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#junta",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "junta",
+      "es" : "Junta"
+    },
+    "domain" : "73",
+    "comment" : {
+      "es" : "Nombre de la junta a la que pertenece una determinada asociación"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotoDe",
+    "inverse" : "132",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "esVotoDe",
+      "es" : "Es voto de"
+    },
+    "domain" : "43",
+    "comment" : {
+      "es" : "Relaciona un voto con la clase definida por la relación ternaria entre voto, representante y punto del orden del día"
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esVotacionDe",
+    "inverse" : "77",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "esVotacionDe",
+      "es" : "Es votación de"
+    },
+    "domain" : "65",
+    "comment" : {
+      "es" : "Relaciona una votación con el punto del orden del día correspondiente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePuntoOD",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "tienePuntoOD",
+      "es" : "Tiene Punto de Orden del Día"
+    },
+    "domain" : "36",
+    "comment" : {
+      "es" : "Relaciona una sesión con los puntos del orden del día tratados en ella"
+    },
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#hasPart",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "es" : "tiene parte"
+    },
+    "domain" : "10",
+    "subproperty" : [ "121" ],
+    "comment" : {
+      "es" : "una entidad esta formada por una segunda entidad, entre otros"
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreGrupoPolitico",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "nombreGrupoPolitico",
+      "es" : "Nombre"
+    },
+    "domain" : "78",
+    "comment" : {
+      "es" : "Nombre de un Grupo Político"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCRde",
+    "inverse" : "114",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "esCRde",
+      "es" : "Es comisión-representante de"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Relaciona una comisión con sus representantes y periodos"
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#hasMember",
+    "inverse" : "137",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+    "range" : "111",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMember",
+      "en" : "has member"
+    },
+    "domain" : "79",
+    "comment" : {
+      "undefined" : "A relation between collections and entities, e.g. 'my collection of saxophones includes an old Adolphe Sax original alto' (i.e. my collection has member an Adolphe Sax alto)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#firma",
+    "inverse" : "47",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "firma",
+      "es" : "Firma"
+    },
+    "domain" : "22",
+    "comment" : {
+      "es" : "Enlaza la persona que ha firmado un documento, con tal documento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#participante",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "participante",
+      "es" : "Participante"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Relaciona un ciudadano con un punto del orden del día en el que ha participado"
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneTipoProcedimiento",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "tieneTipoProcedimiento",
+      "es" : "Tipo procedimiento"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Especifica el tipo de procedimiento con el que ha sido creado un expediente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/firstName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "107",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "firstName",
+      "es" : "Nombre",
+      "undefined" : "firstName"
+    },
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "The first name of a person."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#telefonoGrupoPolitico",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "telefonoGrupoPolitico",
+      "es" : "Teléfono"
+    },
+    "domain" : "78",
+    "comment" : {
+      "es" : "Número de teléfono correspondiente a un Grupo Político"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esEstadoDe",
+    "inverse" : "40",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "esEstadoDe",
+      "es" : "Es estado de"
+    },
+    "domain" : "41",
+    "comment" : {
+      "es" : "Relación que permite indicar que puntos del orden del día tienen un estado específico"
+    },
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVotante",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "tieneVotante",
+      "es" : "Tiene votante"
+    },
+    "domain" : "65",
+    "comment" : {
+      "es" : "Relación que indica que representantes ciudadanos participan en una votación"
+    },
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoExpedienteDe",
+    "inverse" : "45",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "esTipoExpedienteDe",
+      "es" : "Es tipo de expediente de"
+    },
+    "domain" : "46",
+    "comment" : {
+      "es" : "Indica que expedientes son de un determinado tipo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#cargo",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "cargo",
+      "es" : "Cargo"
+    },
+    "domain" : "31",
+    "comment" : {
+      "es" : "Cargo que desempeña un funcionario público"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "range" : "84",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaInicioPortavocia",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "fechaInicioPortavocia",
+      "es" : "Fecha de Inicio"
+    },
+    "domain" : "42",
+    "comment" : {
+      "es" : "Fecha de inicio de como portavoz de un grupo político"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tienePortavoz",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "tienePortavoz",
+      "es" : "Tiene Portavoz"
+    },
+    "domain" : "78",
+    "comment" : {
+      "es" : "Propiedad que permite definir la relación ternaria entre un grupo político, el concejal que lo representa en calidad de portavoz y el periodo de representación"
+    },
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esCaracterDe",
+    "inverse" : "71",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "esCaracterDe",
+      "es" : "Es carácter de"
+    },
+    "domain" : "3",
+    "comment" : {
+      "es" : "Relaciona una sesión del pleno con el tipo de carácter, pudiendo ser este ordinario, extraordinario o extraordinario urgente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#correo",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "correo",
+      "es" : "Correo electrónico"
+    },
+    "domain" : "78",
+    "comment" : {
+      "es" : "correo electrónico de una persona o entidad"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#soporta",
+    "inverse" : "74",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "soporta",
+      "es" : "Soporta"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Indica la relación entre un expendiente y el punto del orden del dia al que está relacionado"
+    },
+    "attributes" : [ "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaFinPortavocia",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "fechaFinPortavocia",
+      "es" : "Fecha fin"
+    },
+    "domain" : "42",
+    "comment" : {
+      "es" : "Fecha de finalización como portavoz de un grupo político"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#asuntoExpediente",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "asuntoExpediente",
+      "es" : "Asunto"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Assunto de un expediente"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esTipoDocumentoDe",
+    "inverse" : "122",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "esTipoDocumentoDe",
+      "es" : "Es Tipo De Documento De"
+    },
+    "domain" : "117",
+    "comment" : {
+      "es" : "Indica que documentos son de un determinado tipo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#nombreComision",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "nombreComision",
+      "es" : "Nombre"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Nombre de una comisión del pleno del ayuntamiento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esParticipanteEn",
+    "inverse" : "116",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "esParticipanteEn",
+      "es" : "Es Participante En"
+    },
+    "domain" : "32",
+    "comment" : {
+      "es" : "Permite indicar un representante ciudadano que participa en el Debate de un punto del orden del día"
+    },
+    "attributes" : [ "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#tieneVoto",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "tieneVoto",
+      "es" : "Voto"
+    },
+    "domain" : "65",
+    "comment" : {
+      "es" : "Indica si el punto del día fue votado a favor, en contra o con abstención"
+    },
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#esProcedimientoDe",
+    "inverse" : "139",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "esProcedimientoDe",
+      "es" : "Es Procedimiento De"
+    },
+    "domain" : "101",
+    "comment" : {
+      "es" : "Relaciona un procedimiento con los expedientes que tienen un tipo determinado de procedimiento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#isMemberOf",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+    "range" : "79",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMemberOf",
+      "en" : "is member of"
+    },
+    "domain" : "111",
+    "attributes" : [ "external", "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#numero",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "numero",
+      "es" : "Número"
+    },
+    "domain" : "15",
+    "comment" : {
+      "es" : "Número de un punto del orden del día"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology#fechaCierre",
+    "baseIri" : "http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "fechaCierre",
+      "es" : "Fecha de cierre"
+    },
+    "domain" : "10",
+    "comment" : {
+      "es" : "Fecha en la que se finalizó un expediente"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "160"
+  } ]
+}

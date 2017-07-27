@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/net/nary-relation" uri="http://www.few.vu.nl/~hoekstra/dp/nary-relation.owl"/>
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec/"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="duplicate:http://www.civichackers.cc/def/plenosAyuntamiento/pav_ontology" uri="pav_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="duplicate:http://www.civichackers.cc/def/plenosAyuntamiento/pav_ontology" uri="pav_ontology_4_narypatterns.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="duplicate:http://www.civichackers.cc/def/plenosAyuntamiento/pav_ontology" uri="pav_ontology_final.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="duplicate:http://www.civichackers.cc/def/plenosAyuntamiento/pav_ontology" uri="pav_ontology_v0.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="duplicate:http://www.civichackers.cc/def/plenosAyuntamiento/pav_ontology" uri="pav_ontology_v0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="duplicate:http://www.civichackers.cc/def/plenosAyuntamiento/pav_ontology" uri="pav_ontology_v1.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl" uri="pav_ontology_3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="http://www.opencitycouncil.org/def/plenosAyuntamiento/occ_ontology" uri="occ_ontology_v1.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501152877796" name="http://xmlns.com/foaf/0.1/" uri="pav_ontology_2.owl"/>
+    </group>
+</catalog>

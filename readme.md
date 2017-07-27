@@ -1,13 +1,13 @@
-#readme.md
-##Descripción
+# Ontología para describir Plenos Municipales
+## Descripción
 Este repositorio contiene el **desarrollo de una ontología para describir los Plenos Municipales**. A partir del caso del Pleno del Ayuntamiento de València se ha generado una ontología de dominio que incluye los principales elementos que intervienen en una sesión plenaria.
 
 El trabajo realizado se recopila en un archivo rdf que contiene la estructura de un pleno municipal expresado en forma de clases y propiedades y que puede ser adoptado para la publicación de información, también se incluye la documentación necesaria para comprender el modelo generado y el proceso de creación de la ontología.
 
-##Guía de uso
+## Guía de uso
 El archivo rdf se puede descargar y usar de modo que el usuario prefiera, ya sea en un programa editor de ontologías para extenderlo o en un repositorio de tripletas para consultarlo.
 
-##Equipo
+## Equipo
 - Autor principal:
 
  [Karina Abad](https://about.me/karinaabad) | @KaryAbadR
